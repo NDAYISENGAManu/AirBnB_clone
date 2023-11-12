@@ -2,8 +2,9 @@
 """Defines unittests for models/amenity.py.
 
 Unittest classes:
-    TestAmenity_instantiation
+    TestAmenity_instantiation,
     TestAmenity_save
+    And
     TestAmenity_to_dict
 """
 import os
@@ -15,7 +16,7 @@ from models.amenity import Amenity
 
 
 class TestAmenity_instantiation(unittest.TestCase):
-    """Unittests for testing instantiation of the Amenity class."""
+    """Unittest for instantiation of the Amenity class."""
 
     def test_no_args_instantiates(self):
         self.assertEqual(Amenity, type(Amenity()))
@@ -86,7 +87,7 @@ class TestAmenity_instantiation(unittest.TestCase):
 
 
 class TestAmenity_save(unittest.TestCase):
-    """Unittests for testing save method of the Amenity class."""
+    """Unittest for save method of the Amenity class."""
 
     @classmethod
     def setUp(self):
@@ -137,7 +138,7 @@ class TestAmenity_save(unittest.TestCase):
 
 
 class TestAmenity_to_dict(unittest.TestCase):
-    """Unittests for testing to_dict method of the Amenity class."""
+    """Unittest for to_dict method of the Amenity class."""
 
     def test_to_dict_type(self):
         self.assertTrue(dict, type(Amenity().to_dict()))
