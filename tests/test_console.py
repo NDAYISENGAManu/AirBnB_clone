@@ -12,11 +12,9 @@ Unittest classes:
     And
     TestHBNBCommand_update
 """
-#export PYTHONPATH = "models"
+
 import os
 import sys
-path = os.path.abspath("models")
-sys.path.append(path)
 import unittest
 from models import storage
 from models.engine.file_storage import FileStorage
